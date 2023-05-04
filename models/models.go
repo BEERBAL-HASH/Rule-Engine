@@ -1,7 +1,12 @@
 package models
 
-var Triggers = []string{"Age is less than 60 Yrs", "Age is above than 60 Yrs"}
-var Actions = []string{"Copy one value to Another",
-	"update the Salary after given increment",
-	"Plot a graph for salary vs increment",
+type Triggers struct {
+	Trigger1 string
+	Trigger2 string
+}
+
+type Actions struct {
+	Action1 string
+	Action2 string
+	Action3 string
 }
