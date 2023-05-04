@@ -20,7 +20,7 @@ func GetActions(c *fiber.Ctx) error {
 	data := models.Actions{
 		Action1: "Copy one value to Another",
 		Action2: "update the Salary after given increment",
-		Action3: "Plot a graph for salary vs increment",
+		Action3: "Plot a graph for current salary vs expected salary",
 	}
 	return c.Status(200).JSON(data)
 }
