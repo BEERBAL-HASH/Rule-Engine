@@ -31,10 +31,12 @@ func ConnectDB() {
 	}
 	fmt.Println("Database connected successfully")
 	db.AutoMigrate(&models.Employee{})
-	DatabaseInstance = db
+	DBconn = db
 }
 
-var DatabaseInstance *gorm.DB
+var (
+	DBconn *gorm.DB
+)
 var PostgresHost string
 var PostgresPort string
 var PostgresUser string
